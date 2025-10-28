@@ -1,0 +1,11 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+df_kplr= pd.read_csv('/home/samu1019/kplr010666592-2011240104155_slc.csv')
+print(df_kplr)
+df_kplr.columns
+plt.plot(df_kplr['TIME'], df_kplr['PDCSAP_FLUX'], 'o', color='limegreen', label='Y1' )
+plt.xlabel('X')
+plt.ylabel('Y')
+
+plt.show()
